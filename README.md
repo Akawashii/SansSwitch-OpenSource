@@ -1,1 +1,1 @@
-# SansSwitch-OpenSource-
+# SansSwitch-OpenSource
