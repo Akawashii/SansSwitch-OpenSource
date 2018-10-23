@@ -44,45 +44,45 @@ module.exports.run = async (bot, message, args) => { //
                 console.log(game)
                 message.channel.send({
                     "embed": {
-                        "title": `${game.name}`,
+                        "title": game.name,
                         "timestamp": new Date(),
                         "color": 3553598,
                         "footer": {
-                            "icon_url": `${message.author.avatarURL}`,
-                            "text": `${message.author.tag}`
+                            "icon_url": message.author.avatarURL,
+                            "text": message.author.tag
                         },
                         "fields": [{
                                 "name": "Titre:",
-                                "value": `${game.name}`
+                                "value": game.name
                             },
                             {
                                 "name": "Title ID:",
-                                "value": `${game.titleid}`,
+                                "value": game.titleid,
                                 "inline": true
                             },
                             {
                                 "name": "Région:",
-                                "value": `${region[game.region]}`,
+                                "value": region[game.region],
                                 "inline": true
                             },
                             {
                                 "name": "Développeur:",
-                                "value": `${game.publisher}`,
+                                "value": game.publisher,
                                 "inline": true
                             },
                             {
                                 "name": "Serial:",
-                                "value": `${game.serial}`,
+                                "value": game.serial,
                                 "inline": true
                             },
                             {
                                 "name": "Langage:",
-                                "value": `${game.languages}`,
+                                "value": game.languages,
                                 "inline": true
                             },
                             {
                                 "name": "Firmware:",
-                                "value": `${game.firmware}`,
+                                "value": game.firmware,
                                 "inline": true
                             }
                         ]
